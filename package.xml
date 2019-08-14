@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package>
     <name>Psquared_PriceFactor</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
-    <license uri="http://www.opensource.org/licenses/gpl-license.php">GPL</license>
+    <license uri="http://opensource.org/licenses/gpl-license.php">GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>Define a price factor in the system configuration which is multiplied with all product prices.</summary>
@@ -13,15 +13,12 @@ Features:&#xD;
 - Enable or disable price factor&#xD;
 - Define a price factor as integer or decimal. Values between 0 and 1 reduce the price. Values greater than 1 increase the final price.&#xD;
 - Disable the default minimal price in frontend for price factors lower than 1.&#xD;
-- Cart clearing to prevent wrong price factors by adding products and switching to another store view.&#xD;
-&#xD;
-GitHub Repository:&#xD;
-https://github.com/patrickbaber/Psquared_PriceFactor</description>
-    <notes>Initial Release</notes>
+- Cart clearing to prevent wrong price factors by adding products and switching to another store view.</description>
+    <notes>- Fixed misconfiguration in the config file of the extenion</notes>
     <authors><author><name>p squared</name><user>p_squared</user><email>realityfforce@yahoo.de</email></author></authors>
-    <date>2013-04-12</date>
-    <time>10:16:04</time>
-    <contents><target name="magecommunity"><dir name="Psquared"><dir name="PriceFactor"><dir name="Block"><dir name="Product"><file name="Price.php" hash="5af988c0cfa1546302c5656512e8abe6"/></dir></dir><dir name="Helper"><file name="Data.php" hash="38561dbde0ffc73d964f8915f2d98c88"/></dir><dir name="Model"><file name="Observer.php" hash="7cf46bb5278223b436647ffdd68b0ca4"/></dir><dir name="etc"><file name="config.xml" hash="25dc66f7c7a675451e33ccefe1385f8a"/><file name="system.xml" hash="d81fefca824a94907d6f0d49c41a5fa9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Psquared_PriceFactor.xml" hash="be5ea6889215cc17c91ce60fed06d7e1"/></dir></target><target name="magelocale"><dir><dir name="de_DE"><file name="Psquared_PriceFactor.csv" hash="6f857928a8cd7f7f7a7c512116483c64"/></dir></dir></target></contents>
+    <date>2013-05-10</date>
+    <time>09:55:21</time>
+    <contents><target name="magecommunity"><dir name="Psquared"><dir name="PriceFactor"><dir name="Block"><dir name="Product"><file name="Price.php" hash="e44db0da6a54ceb5d18770e6e44642b6"/></dir></dir><dir name="Helper"><file name="Data.php" hash="38561dbde0ffc73d964f8915f2d98c88"/></dir><dir name="Model"><file name="Observer.php" hash="7cf46bb5278223b436647ffdd68b0ca4"/></dir><dir name="etc"><file name="config.xml" hash="5c2fe532ea5000a34847af31b429667e"/><file name="system.xml" hash="d81fefca824a94907d6f0d49c41a5fa9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Psquared_PriceFactor.xml" hash="248a199e24c7b618cfe0aafa91e3710a"/></dir></target><target name="magelocale"><dir><dir name="de_DE"><file name="Psquared_PriceFactor.csv" hash="6f857928a8cd7f7f7a7c512116483c64"/></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
